@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "LeekAI"
+version = "0.1.0"
+description = "Pure Python CNN with CLI"
+authors = [{ name = "Ahmad Shatnawi" }]
+requires-python = ">=3.8"
+dependencies = []
+
+
+[project.optional-dependencies]
+pillow = ["pillow"]
+kaggle = ["kagglehub"]
+all = ["pillow", "kagglehub"]
+
+
+[project.scripts]
+leekai = "leekai.cli:main"
+
+
+[tool.setuptools.packages.find]
+where = ["src"]

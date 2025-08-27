@@ -2,6 +2,8 @@
 
 LeekAI is a tiny Convolutional Neural Network written entirely in pure Python (no NumPy, no deep learning frameworks). It includes a simple CLI for training, prediction, and testing, with optional Pillow support for real image loading.
 
+Disclaimer: This code is designed for learning purposes only. It will not achieve high accuracy compared to real deep learning frameworks (like PyTorch or TensorFlow). The goal is to demonstrate how CNNs work under the hood, not to provide production‑grade performance.
+
 ---
 
 ## Features
@@ -115,7 +117,7 @@ Credits:
 
 ## Notes
 
-* Intended for educational use and experimentation, not performance.
+* This is **educational code** and will not give you great accuracy percentages.
 * Works without Pillow (deterministic simulator used instead).
 * Developed with the help of ChatGPT and Google Gemini.
 
