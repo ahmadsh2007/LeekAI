@@ -1,2 +1,2 @@
+# Include the new README
 include README.md
-recursive-include data *

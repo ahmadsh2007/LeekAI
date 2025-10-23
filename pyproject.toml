@@ -2,25 +2,33 @@
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
-
 [project]
 name = "LeekAI"
-version = "0.1.0"
-description = "Pure Python CNN with CLI"
+version = "2.0.0"
+description = "Dynamic NumPy/Numba CNN with GUI and CLI"
+readme = "README.md"
 authors = [{ name = "Ahmad Shatnawi" }]
 requires-python = ">=3.8"
-dependencies = []
+license = { text = "MIT License" }
 
+dependencies = [
+    "numpy",
+    "numba",
+    "pillow",
+    "scipy"
+]
 
-[project.optional-dependencies]
-pillow = ["pillow"]
-kaggle = ["kagglehub"]
-all = ["pillow", "kagglehub"]
+keywords = ["cnn", "numpy", "numba", "deep learning", "educational"]
 
+classifiers=[
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
 
 [project.scripts]
-leekai = "leekai.cli:main"
-
+leekai = "leekai.__main__:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
